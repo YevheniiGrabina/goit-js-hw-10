@@ -3,7 +3,7 @@ import { fetchCountries } from './fetchCountries';
 import { renderInterface } from './render-interface';
 import { refs } from './get-refs';
 import { checkInput } from './helpers/regularTestInput';
-var debounce = require('lodash.debounce');
+const debounce = require('lodash.debounce');
 
 refs.searchCountry.addEventListener('input', debounce(onSearch, 300));
 
